@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>DWTS Fantasy Draft</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>DWTS Fantasy Draft</h1>
+      <section>
+        <h2>Your Draft</h2>
+        <form id="draft-form">
+          <label>
+            Display name
+            <input type="text" id="displayName" required maxlength="200" />
+          </label>
+          <label>
+            Email (optional)
+            <input type="email" id="email" />
+          </label>
+
+          <div>
+            <p>Select your picks (at least 3 contestants):</p>
+            <div id="contestants"></div>
+          </div>
+          <button type="submit">Submit Draft</button>
+        </form>
+        <div id="message"></div>
+      </section>
+      <section>
+        <h2>Submitted Drafts</h2>
+        <div id="submissions"></div>
+      </section>
+    </div>
+    <script src="/main.js" type="module"></script>
+  </body>
+  </html>
